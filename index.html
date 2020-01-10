@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <button onclick="zoomCtrl(false)">-</button>
+    缩放
+    <button onclick="zoomCtrl(true)">+</button>
+    <br>
+    <button onclick="removeNodeFunc('上级审批')">removeNode</button>
+    <button onclick="addNodeFunc('上级审批')">addNode</button>
+    <br>
+    <input type="number" id="edgeCount">
+    <button onclick="changeEdge()">显示大于等于左边数值的 Edge</button>
+    <br>
+    <input type="number" id="nodeCount">
+    <button onclick="changeNode()">显示大于等于左边数值的 Node</button>
+  </div>
+  <svg id="svgCanvas" width="960" height="960">
+    <g/>
+  </svg>
+  
+</body>
+</html>
